@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.3rem;
+}
+* { font-weight: 500; }
+h1, h2 { margin: 0; }
+.background { z-index: -100; }
+.background div {
+    height: 29px; width: 29px;
+    border-right: 1px solid #aaa;
+    border-bottom: 1px solid #aaa;
+}
+.background .column {
+    float: left;
+}
+.box {
+    position: absolute;
+    top: 0; left: 0;
+    transform: translate(30px,30px);
+    height: 150px;
+    width: 150px;
+    outline: 3px solid #333;
+    z-index: 10;
+    user-select: none;
+}
+.option-menu {
+    position: absolute;
+    top: 30px; right: 31px;
+    width: 379px;
+    min-height: 589px;
+    background-color: #fafafa;
+    box-shadow: 0px 0px 20px -6px rgba(0,0,0,0.75);
+    padding: 20px;
+}
+input[type=number] {
+    margin-left: 20px;
+    height: 20px;
+    width: 50px;
+    font-size: 1rem;
+    margin-top: 2px;
+    padding: 5px;
+}
+.option-menu p { 
+    display: flex;
+    align-items: center;
+}
+.point {
+    position: absolute;
+    top: 90px; left: 90px;
+    transform: translate(-50%,-50%);
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+.points-list {
+    height: 300px;
+    overflow-y: scroll;
+}
+.points-list span { display: block; }
+.points-list span:first-child { width: 70px; }
+.check, .remove {
+    padding: 0 8px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    margin-left: 5px;
+    user-select: none;
+}
+.check:hover, .remove:hover {
+    cursor: pointer;
+    filter: brightness(92%);
+}
+.check {
+    width: 50px;
+    background-color: chartreuse;
+    color: #444;
+    transition: filter 0.1s;
+}
+.remove {
+    background-color: crimson;
+    border-radius: 3px;
+    color: white;
+    width: 10px;
+}
+.message {
+    position: absolute;
+    bottom: 30px; right: 30px;
+    width: 500px;
+    padding: 20px 5px;
+    font-size: 28px;
+    background-color: #eee;
+    text-align: center;
+    box-shadow: 0px 0px 20px -7px rgba(0,0,0,0.75);
+    opacity: 0;
+    transition: opacity 0.2s;
+}

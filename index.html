@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitbox</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Szymon Gniadek">
+
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="option-menu">
+        <h2>SQUARE OPTIONS</h2>
+        <p class="attr"><span>Width:</span> <input type="number" value="150" step="30" id="box-width"></p>
+        <p class="attr"><span>Height:</span> <input type="number" value="150" step="30" id="box-height"></p>
+        <h2>POINTS OPTIONS</h2>
+        <div class="points-list" id="points-list"></div>
+        <p><button>Add a point</button></p>
+    </div>
+    <div class="box" id="box"></div>
+    <div class="background"></div>
+    <script src="dragAndDrop.js"></script>
+    <script src="main.js"></script>
+    <script src="point.js"></script>
+</body>
+</html>
